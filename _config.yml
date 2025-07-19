@@ -1,0 +1,12 @@
+title: Jithinkrishna V. M. - Electronics Engineer Portfolio
+description: Electronics Engineer with expertise in FPGA design, control systems, and electronics design
+baseurl: ""
+url: "https://username.github.io"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - personal_details.md
