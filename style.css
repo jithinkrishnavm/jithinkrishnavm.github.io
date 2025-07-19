@@ -543,7 +543,7 @@ body {
 .experience-timeline::before {
     content: '';
     position: absolute;
-    left: 30px;
+    left: 220px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -559,8 +559,8 @@ body {
 .experience-item::before {
     content: '';
     position: absolute;
-    left: 24px;
-    top: 8px;
+    left: 214px;
+    top: 12px;
     width: 14px;
     height: 14px;
     background: var(--primary-color);
@@ -571,6 +571,7 @@ body {
 .experience-date {
     flex: 0 0 200px;
     padding-right: 2rem;
+    text-align: right;
 }
 
 .experience-date span {
