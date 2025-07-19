@@ -1,0 +1,9 @@
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <rect width="20" height="20" fill="#0f1419" rx="2"/>
+  <text x="10" y="8" fill="#e52e2e" font-family="Arial, sans-serif" font-size="4" font-weight="bold" text-anchor="middle">ESP</text>
+  <text x="10" y="13" fill="#e52e2e" font-family="Arial, sans-serif" font-size="4" font-weight="bold" text-anchor="middle">32</text>
+  <rect x="2" y="15" width="3" height="3" fill="#61dafb" rx="1"/>
+  <rect x="6" y="15" width="3" height="3" fill="#61dafb" rx="1"/>
+  <rect x="11" y="15" width="3" height="3" fill="#61dafb" rx="1"/>
+  <rect x="15" y="15" width="3" height="3" fill="#61dafb" rx="1"/>
+</svg>

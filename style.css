@@ -329,11 +329,32 @@ body {
     border-radius: var(--border-radius);
     margin-bottom: 1.5rem;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .education-item:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
+}
+
+.education-logo {
+    flex-shrink: 0;
+}
+
+.institution-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    padding: 8px;
+    box-shadow: var(--shadow-light);
+}
+
+.education-info {
+    flex: 1;
 }
 
 .education-header {
@@ -425,12 +446,32 @@ body {
     font-weight: 500;
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .skill-tag:hover {
     background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
+}
+
+.skill-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.skill-icon {
+    font-size: 16px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.skill-tag:hover .skill-icon {
+    color: white;
 }
 
 .projects {
@@ -610,6 +651,31 @@ body {
 .experience-content:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-large);
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    flex-shrink: 0;
+}
+
+.company-logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    padding: 6px;
+    box-shadow: var(--shadow-light);
+}
+
+.company-info {
+    flex: 1;
 }
 
 .experience-content h3 {
@@ -819,10 +885,22 @@ body {
         gap: 1rem;
     }
     
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
     .education-header {
         flex-direction: column;
         align-items: start;
         gap: 0.5rem;
+    }
+    
+    .company-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
     }
     
     .skills-grid {
