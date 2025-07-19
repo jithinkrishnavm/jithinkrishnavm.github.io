@@ -1,0 +1,51 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#bgGrad)" rx="12"/>
+  
+  <!-- FPGA Chip -->
+  <rect x="50" y="60" width="80" height="80" fill="url(#chipGrad)" rx="8"/>
+  <text x="90" y="85" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">FPGA</text>
+  <text x="90" y="100" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Zynq 7000</text>
+  
+  <!-- Neural Network visualization -->
+  <circle cx="200" cy="80" r="6" fill="#10b981"/>
+  <circle cx="180" cy="100" r="6" fill="#10b981"/>
+  <circle cx="220" cy="100" r="6" fill="#10b981"/>
+  <circle cx="200" cy="120" r="6" fill="#10b981"/>
+  
+  <!-- Connections -->
+  <line x1="130" y1="100" x2="174" y2="100" stroke="#6b7280" stroke-width="2"/>
+  <line x1="130" y1="100" x2="194" y2="80" stroke="#6b7280" stroke-width="1"/>
+  <line x1="130" y1="100" x2="194" y2="120" stroke="#6b7280" stroke-width="1"/>
+  
+  <!-- Data flow arrows -->
+  <polygon points="170,98 174,100 170,102" fill="#6b7280"/>
+  
+  <!-- RISC-V label -->
+  <text x="90" y="115" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">RISC-V</text>
+  
+  <!-- Neural network label -->
+  <text x="200" y="140" fill="#374151" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Neural Network</text>
+  <text x="200" y="152" fill="#6b7280" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Quantization</text>
+  
+  <!-- Optimization indicators -->
+  <rect x="240" y="70" width="40" height="20" fill="#fbbf24" rx="4"/>
+  <text x="260" y="82" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle">OPT</text>
+  
+  <!-- Performance chart -->
+  <rect x="20" y="160" width="4" height="20" fill="#ef4444"/>
+  <rect x="28" y="150" width="4" height="30" fill="#f59e0b"/>
+  <rect x="36" y="140" width="4" height="40" fill="#10b981"/>
+  <text x="30" y="195" fill="#6b7280" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Performance</text>
+</svg>
