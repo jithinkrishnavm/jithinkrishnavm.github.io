@@ -535,48 +535,50 @@ body {
 }
 
 .experience-timeline {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
-    padding-left: 2rem;
-}
-
-.experience-timeline::before {
-    content: '';
-    position: absolute;
-    left: 240px;
-    top: 20px;
-    bottom: 20px;
-    width: 3px;
-    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
-    border-radius: 2px;
 }
 
 .experience-item {
-    display: flex;
-    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 240px 60px 1fr;
+    gap: 0;
+    margin-bottom: 3rem;
     position: relative;
-    align-items: flex-start;
-    gap: 2rem;
+    align-items: start;
 }
 
 .experience-item::before {
     content: '';
     position: absolute;
-    left: 232px;
-    top: 20px;
-    width: 18px;
-    height: 18px;
+    left: 260px;
+    top: 22px;
+    width: 20px;
+    height: 20px;
     background: var(--bg-primary);
     border: 4px solid var(--primary-color);
     border-radius: 50%;
     box-shadow: 0 0 0 4px var(--bg-primary), 0 2px 8px rgba(37, 99, 235, 0.3);
     z-index: 2;
+    transform: translateX(-50%);
+}
+
+.experience-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 260px;
+    top: 42px;
+    bottom: -3rem;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .experience-date {
-    flex: 0 0 220px;
-    padding-right: 1rem;
+    padding-right: 2rem;
     text-align: right;
     padding-top: 0.5rem;
 }
@@ -591,8 +593,11 @@ body {
     display: inline-block;
 }
 
+.timeline-spacer {
+    /* Empty spacer for the middle column */
+}
+
 .experience-content {
-    flex: 1;
     background: var(--bg-primary);
     padding: 2rem;
     border-radius: var(--border-radius);
@@ -834,29 +839,24 @@ body {
         gap: 0.5rem;
     }
     
-    .experience-timeline {
-        padding-left: 0;
-    }
-    
     .experience-item {
-        flex-direction: column;
+        display: block;
         margin-bottom: 2rem;
-        gap: 1rem;
     }
     
-    .experience-timeline::before {
-        display: none;
-    }
-    
-    .experience-item::before {
+    .experience-item::before,
+    .experience-item::after {
         display: none;
     }
     
     .experience-date {
-        flex: none;
         margin-bottom: 1rem;
         padding-right: 0;
         text-align: left;
+    }
+    
+    .timeline-spacer {
+        display: none;
     }
     
     .experience-content {
