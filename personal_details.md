@@ -8,17 +8,18 @@ Electrical Engineer with expertise in FPGA design, control systems, and electron
 
 # Skills
 
-Hardware targets : FPGA Zynq 7000, Zybo z7-20, Arduino Uno/Nano, ESP32, TI C2000, Raspberry pi 3B+/ pi zero.  
-Design & Simulation platforms : MATLAB Simulink, FSM, Pneumatics, LTSpice, KiCad, FPGAs, Modelsim, Vivado, Vitis & Cadence  
-Electronic : ADCs, DACs, Comparators, SVPWM, PLL, Amplifiers - signal analysis, Step up/down converters & filters
-Programming : VHDL, Verilog, SystemVerilog, MATLAB, Python & C
+Hardware targets: FPGA Zynq 7000, Zybo z7-20, Arduino Uno/Nano, ESP32, TI C2000, Raspberry pi 3B+/pi zero  
+Design & Simulation platforms: MATLAB Simulink, LTSpice, KiCad, Modelsim, Vivado, Vitis & Cadence virtuoso
+Analog electronics: ADCs, DACs, Comparators, SVPWM, PLL, Amplifiers, small signal analysis, Step up/down converters & filters
+Digital electronics: ATPG, BIST, Logic minimisation, DFT, Test generation and coverage analysis.
+Programming languages: VHDL, Verilog, SystemVerilog, MATLAB, Python & C
 
 # Education
 
 Universität Siegen - M. Sc. 2022 -2025
 Electronics Design Technology - Analog & Digital IC design | Fabrication and test | Semiconductor Electronics design | Optoelectronics
 College of Engineering Trivandrum - B. Tech 2017 - 2021
-Electrical and Electronics Engineering - Control systems | High/Low voltage systems
+Electrical and Electronics Engineering - Control systems | High/Low voltage systems | Power electronics | Machine design
 
 # Work History
 
